@@ -297,6 +297,8 @@ A template can include a mixture of static (unchanging) HTML and "code" that gen
 
 For example, code in a template could generate a series of `<li>` elements for data provided to it in an array.
 
+When a server receives a request, it processes the EJS templates and sends the generated HTML to the client as a response. The client's browser then renders the HTML. EJS itself does not run in the browser; it is a server-side technology.
+
 ### View Engines
 
 In Express, we use `res.render()` to process a template using a _view engine_ and return the resulting HTML to the browser.
