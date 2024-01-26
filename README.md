@@ -221,7 +221,7 @@ In the next Express lesson, we'll learn a preferred way of defining routes using
 The second argument provided to `app.get()` is a callback function that is executed by Express when the server receives an HTTP Request that matches the route:
 
 ```js
-app.get('/', (req, res) => {
+app.get('/', (req, res, next) => {
   res.send('<h1>Hello Express</h1>');
 });
 ```
