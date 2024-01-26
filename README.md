@@ -50,7 +50,9 @@
     ```
     Accept the defaults, **except** for the **entry point** - set this to be "**server.js**".
 
-4. Open the project's folder in your code editor:
+   Npm init is used to create a new node project.  Package.json contains metadata about the project. 
+
+5. Open the project's folder in your code editor:
 
     ```
     code .
