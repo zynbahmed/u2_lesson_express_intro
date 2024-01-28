@@ -1,6 +1,7 @@
 // Load express
 const express = require('express');
 const path = require('path');
+const todoDb = require('./data/todo-db');
 
 // Create our express app
 const app = express();
@@ -17,6 +18,11 @@ app.get('/', (req, res) => {
 
 app.get('/home', (req, res) => {
     res.render('home');
+  });
+
+  app.get('/todos', (req, res) => {
+    const todos = todoDb.getAll()
+    res.render('todos/index', { todos });
   });
 
 // Tell the app to listen on port 3000
