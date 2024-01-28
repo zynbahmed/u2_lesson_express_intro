@@ -7,11 +7,16 @@ const app = express();
 // Define a "root" route directly on app
 // Tomorrow, we'll use best practice routing
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World!</h1>');
+  res.send('<h1>Hello Eesprsoo!</h1>');
 });
+
+app.get('/home', (req, res) => {
+    res.send('<h1>Home Page</h1>');
+  });
 
 // Tell the app to listen on port 3000
 // for HTTP requests from clients
 app.listen(3000, () => {
   console.log('Listening on port 3000');
 });
+
